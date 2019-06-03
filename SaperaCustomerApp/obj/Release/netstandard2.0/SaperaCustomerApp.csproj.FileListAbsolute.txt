@@ -1,0 +1,16 @@
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\bin\Release\netstandard2.0\SaperaCustomerApp.deps.json
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\bin\Release\netstandard2.0\SaperaCustomerApp.dll
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\bin\Release\netstandard2.0\SaperaCustomerApp.pdb
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\Views\Conditions.xaml.g.cs
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\Views\CreateAccount.xaml.g.cs
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\Views\ForgotPassword.xaml.g.cs
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\Views\Home.xaml.g.cs
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\SaperaCustomerApp.csproj.CoreCompileInputs.cache
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\SaperaCustomerApp.AssemblyInfoInputs.cache
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\SaperaCustomerApp.AssemblyInfo.cs
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\SaperaCustomerApp.dll
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\SaperaCustomerApp.pdb
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\obj\Release\netstandard2.0\SaperaCustomerApp.csprojAssemblyReference.cache

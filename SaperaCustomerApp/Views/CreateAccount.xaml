@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SaperaCustomerApp"
+             x:Class="SaperaCustomerApp.CreateAccount"
+             Title="Opret Konto">
+
+
+    <Grid  BackgroundColor="#DBDBDB" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="300" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Opret Konto" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="10"/>
+        <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry Placeholder="Email" FontSize="Small" HeightRequest="45"  FontFamily="sans-serif"  x:Name="ent_Email" PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry Placeholder="Kodeord" FontSize="Small" HeightRequest="45"  FontFamily="sans-serif"  x:Name="ent_Password" IsPassword="True" PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry Placeholder="Gentag Kodeord" FontSize="Small" HeightRequest="45"  FontFamily="sans-serif"  x:Name="ent_Password2" IsPassword="True" PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="FillAndExpand">
+                    <Label Text="Accepter betingelser
+                           for brug af appen" 
+                            FontFamily="sans-serif-light" 
+                            BackgroundColor="Transparent" 
+                            TextColor="Black" 
+                            FontSize="Micro" 
+                            HorizontalOptions="Start" />
+                    
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Switch IsToggled="False" 
+                            Scale="0.7" 
+                            OnColor="#4EC33C" 
+                            x:Name="swi_acceptance" 
+                            VerticalOptions="Start" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="FillAndExpand">
+                 
+                    <Button Text="Læs betingelser" 
+                            FontFamily="sans-serif"  
+                            BackgroundColor="#3C7BC3" 
+                            HeightRequest="38" 
+                            Margin="0" 
+                            Padding="10" 
+                            FontSize="12"
+                            BorderRadius="8" 
+                            BorderWidth="2" 
+                            TextColor="#FFFFFF" 
+                            HorizontalOptions="Start" 
+                            x:Name="btn_read_conditions"
+                            Clicked="Btn_read_conditions_Clicked"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Button Text="Opret Konto" 
+                            Clicked="Btn_CreateSubmit_Clicked"
+                            FontFamily="sans-serif"  
+                            x:Name="btn_CreateSubmit" 
+                            BackgroundColor="#4EC33C" 
+                            HeightRequest="38" 
+                            Margin="0" 
+                            Padding="10" 
+                            FontSize="12"
+                            BorderRadius="8" 
+                            BorderWidth="2" 
+                            TextColor="#FFFFFF" 
+                            HorizontalOptions="End" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SaperaCustomerApp"
+             x:Class="SaperaCustomerApp.MainPage"
+             Title="Kunde App">
+
+    <Grid  BackgroundColor="#DBDBDB" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="190" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Login" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="10"/>
+        <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="ent_LoginEmail" Placeholder="Email" HeightRequest="45" FontFamily="sans-serif" FontSize="Small" PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry  x:Name="ent_LoginPassword" Placeholder="Kodeord" FontFamily="sans-serif" FontSize="Small" HeightRequest="45" IsPassword="True" PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Button Text="Glemt Kodeord" 
+                            FontFamily="Sans-serif-light" 
+                            BackgroundColor="Transparent" 
+                            TextColor="Black"  
+                            HeightRequest="38" 
+                            Margin="0" 
+                            Padding="10" 
+                            FontSize="12" 
+                            x:Name="btn_ForgotPassword" 
+                            HorizontalOptions="Start"
+                            Clicked="Btn_ForgotPassword_Clicked"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Button Text="Login" 
+                            FontFamily="sans-serif"  
+                            x:Name="btn_LoginSubmit" 
+                            HeightRequest="38" 
+                            Margin="0" 
+                            Padding="10"
+                            FontSize="12" 
+                            BackgroundColor="#3C7BC3"  
+                            BorderRadius="8" 
+                            BorderWidth="2" 
+                            TextColor="#FFFFFF" 
+                            HorizontalOptions="End"
+                            Clicked="Btn_LoginSubmit_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+        <Label Text="Kunde Oprettelse" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20"  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="10"/>
+        <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button Text="Opret Konto" 
+                        FontFamily="sans-serif"  
+                        HeightRequest="38"
+                        Margin="0" 
+                        Padding="10" 
+                        FontSize="12"  
+                        x:Name="btn_AccountCreateSubmit" 
+                        BorderRadius="8" 
+                        BorderWidth="2" 
+                        BackgroundColor="#4EC33C" 
+                        TextColor="#FFFFFF" 
+                        HorizontalOptions="FillAndExpand"
+                        Clicked="Btn_AccountCreateSubmit_Clicked"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>

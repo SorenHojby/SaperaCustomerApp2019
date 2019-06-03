@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+     Note
+    While it's acceptable to place a NavigationPage into a TabbedPage,
+    it's not recommended to place a TabbedPage into a NavigationPage.
+    
+    This is because, on iOS, a UITabBarController always acts as a wrapper
+    for the UINavigationController. For more information, 
+    see Combined View Controller Interfaces in the iOS Developer Library.
+    
+    -->
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SaperaCustomerApp"
+             x:Class="SaperaCustomerApp.Home"
+            NavigationPage.HasNavigationBar="False"
+            Title="Hjem">
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="Kundekort">
+        <Grid  BackgroundColor="#DBDBDB" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="300" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Kundekort" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="10"/>
+            <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+                <Image Source="http://codice.dk/sapera/customers/barcodes/barcode.png"  Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            </StackLayout>
+            <Label Text="KundeID" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="10"/>
+            <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+                <Label Text="1234567891234" x:Name="lbl_CustomerID" FontFamily="sans-serif" TextColor="#000000" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Home" >
+        <Grid  BackgroundColor="#DBDBDB" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Velkommen" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="10"/>
+            <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+                <Label x:Name="lbl_Name" Text="Fornavn Efternavn" FontFamily="sans-serif" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="10"/>
+            </StackLayout>
+
+            <Label Text="Antal Point" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="10"/>
+            <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+                <Label x:Name="lbl_Points" Text="0000" FontFamily="sans-serif"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="10"/>
+            </StackLayout>
+
+            <Label Text="KundeID" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="10"/>
+            <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+                <Label x:Name="lbl_CustomerID2" Text="1234567891234" FontFamily="sans-serif"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="10"/>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Profil" >
+
+        <Grid  BackgroundColor="#DBDBDB" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Profil" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="10"/>
+
+            <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Personlige Oplysninger" FontFamily="sans-serif" TextColor="#000000" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="10"/>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Entry Placeholder="Fornavn" x:Name="ent_Firstname" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Entry Placeholder="Efternavn" x:Name="ent_Lastname" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+
+                            <DatePicker IsVisible="False" x:Name="dp_Birthday" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+                            <Entry Placeholder="Køn" x:Name="ent_gender" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA"/>
+
+                            <Label Text="Adresse Informationer" FontFamily="sans-serif" TextColor="#000000" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="10"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Entry Placeholder="Vejnavn" x:Name="ent_roadname" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Entry Placeholder="Husnummer, Etage, Dør" x:Name="ent_housenumber" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Entry Placeholder="Postnummer" x:Name="ent_postalnumber" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Entry Placeholder="By" x:Name="ent_cityname" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+                            </StackLayout>
+                            <Label Text="Konto Indstillinger" FontFamily="sans-serif" TextColor="#000000" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16"  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="10"/>
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Entry Placeholder="Email" IsVisible="False" x:Name="ent_Email" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Entry Placeholder="Mobil telefonnummer" x:Name="ent_phonenumber" FontSize="12" HeightRequest="45"  FontFamily="sans-serif"   PlaceholderColor="Silver"  HorizontalOptions="FillAndExpand"  BackgroundColor="#FAFAFA" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="FillAndExpand">
+                                    <Label Text="Modtag nyhedsbrev" 
+                            FontFamily="sans-serif-light" 
+                            BackgroundColor="Transparent" 
+                            TextColor="Black" 
+                            FontSize="Micro" 
+                            HorizontalOptions="Start" />
+
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                    <Switch IsToggled="False"
+                                            x:Name="sw_newsletter"
+                                            Scale="0.7" 
+                                            OnColor="#4EC33C" 
+                                            VerticalOptions="Start" />
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout HorizontalOptions="FillAndExpand" 
+                                             VerticalOptions="FillAndExpand">
+                                    <Label Text="Modtag SMS tilbud" 
+                                           FontFamily="sans-serif-light" 
+                                           BackgroundColor="Transparent" 
+                                           TextColor="Black" 
+                                           FontSize="Micro" 
+                                           HorizontalOptions="Start" />
+
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                                    <Switch IsToggled="False" 
+                                            x:Name="sw_sms"
+                                            Scale="0.7" 
+                                            OnColor="#4EC33C" 
+                                            VerticalOptions="Start" />
+                                </StackLayout>
+                            </StackLayout>
+                            <StackLayout HorizontalOptions="FillAndExpand" 
+                             VerticalOptions="FillAndExpand">
+
+                                <Button Text="Ændre kodeord" 
+                                        x:Name="btn_change_password"
+                                        Clicked="Btn_change_password_Clicked"
+                            FontFamily="sans-serif"  
+                            BackgroundColor="#3C7BC3" 
+                            HeightRequest="38" 
+                            Margin="0" 
+                            Padding="10" 
+                            FontSize="12"
+                            BorderRadius="8" 
+                            BorderWidth="2" 
+                            TextColor="#FFFFFF" 
+                            HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                    <Button Text="Log af" 
+                                            x:Name="btn_logout"
+                                            Clicked="Btn_logout_Clicked"
+                            FontFamily="sans-serif"  
+                            BackgroundColor="#C33C3C" 
+                            HeightRequest="38" 
+                            Margin="0" 
+                            Padding="10" 
+                            FontSize="12"
+                            BorderRadius="8" 
+                            BorderWidth="2" 
+                            TextColor="#FFFFFF" 
+                            HorizontalOptions="Start" />
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                    <Button Text="Gem" 
+                                            x:Name="btn_save"
+                                            Clicked="Btn_save_Clicked"
+                            FontFamily="sans-serif"  
+                            BackgroundColor="#4EC33C" 
+                            HeightRequest="38" 
+                            Margin="0" 
+                            Padding="10" 
+                            FontSize="12"
+                            BorderRadius="8" 
+                            BorderWidth="2" 
+                            TextColor="#FFFFFF" 
+                            HorizontalOptions="End" />
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </Grid>
+    </ContentPage>
+</TabbedPage>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SaperaCustomerApp"
+             x:Class="SaperaCustomerApp.Conditions" Title="Betingelser">
+    <Grid  BackgroundColor="#DBDBDB" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Betingelser" FontFamily="sans-serif" BackgroundColor="#3C7BC3" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="10"/>
+        <StackLayout  Orientation="Vertical" Padding="25,10,25,10" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="10" BackgroundColor="#FFFFFF">
+            <ScrollView>
+                <StackLayout>
+                    <Label VerticalOptions="FillAndExpand" TextColor="Black" FontSize="12" FontFamily="sans-serif-thin">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus lectus vel velit fermentum sollicitudin. Etiam ut varius sem. Ut porttitor nibh purus, ut tempor ligula sollicitudin porttitor. Fusce porta nisi vitae magna convallis imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dapibus ante felis. Sed gravida ante sed mi euismod interdum.
+                    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus lectus vel velit fermentum sollicitudin. Etiam ut varius sem. Ut porttitor nibh purus, ut tempor ligula sollicitudin porttitor. Fusce porta nisi vitae magna convallis imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dapibus ante felis. Sed gravida ante sed mi euismod interdum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus lectus vel velit fermentum sollicitudin. Etiam ut varius sem. Ut porttitor nibh purus, ut tempor ligula sollicitudin porttitor. Fusce porta nisi vitae magna convallis imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dapibus ante felis. Sed gravida ante sed mi euismod interdum.
+                    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus lectus vel velit fermentum sollicitudin. Etiam ut varius sem. Ut porttitor nibh purus, ut tempor ligula sollicitudin porttitor. Fusce porta nisi vitae magna convallis imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dapibus ante felis. Sed gravida ante sed mi euismod interdum.
+                
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus lectus vel velit fermentum sollicitudin. Etiam ut varius sem. Ut porttitor nibh purus, ut tempor ligula sollicitudin porttitor. Fusce porta nisi vitae magna convallis imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dapibus ante felis. Sed gravida ante sed mi euismod interdum.
+                    </Label>
+                    <Button  Text="Luk" 
+                            Clicked="Btn_Close_Conditions_Clicked"
+                            FontFamily="sans-serif"  
+                            x:Name="btn_Close_Conditions" 
+                            BackgroundColor="#C33C3C" 
+                            HeightRequest="38" 
+                            Margin="0" 
+                            Padding="10" 
+                            FontSize="12"
+                            BorderRadius="8" 
+                            BorderWidth="2" 
+                            TextColor="#FFFFFF" 
+                            HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+               
+            </ScrollView>
+        </StackLayout>
+    </Grid>
+   
+</ContentPage>

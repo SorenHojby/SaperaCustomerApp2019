@@ -1,0 +1,2 @@
+C:\Users\SørenHøjby\.nuget\packages\zxing.net\0.16.4\lib\MonoAndroid\zxing.monoandroid.dll
+C:\Users\SørenHøjby\source\repos\SaperaCustomerApp\SaperaCustomerApp\bin\Debug\netstandard2.0\SaperaCustomerApp.dll
